@@ -1,29 +1,13 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View, ScrollView } from 'react-native';
-
-
-import MeuComponente from './MeuComponente';
+import { StyleSheet, View } from 'react-native';
+import Title from './src/components/title/';
+import Main from './src/components/Main';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <StatusBar style="light" />
-
-      <Text style={styles.title}>Meu App</Text>
-      <ScrollView>
-        <MeuComponente />
-        <MeuComponente />
-        <MeuComponente />
-        <MeuComponente />
-        <MeuComponente />
-        <MeuComponente />
-        <MeuComponente />
-        <MeuComponente />
-        <MeuComponente />
-        <MeuComponente />
-      </ScrollView>
-
+      <Title />
+      <Main />
     </View>
   );
 }
